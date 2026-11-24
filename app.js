@@ -394,7 +394,66 @@ function showNextVocabulary(){
 }
 
 
+
+/* Whole-site scroll reveal animation. Also observes content re-rendered by filters and quizzes. */
+function btSetupRevealAnimations(){
+ if(window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+ if(!('IntersectionObserver' in window))return;
+ const selector=[
+  '.page-banner','.premium-hero','.proof-strip','.home-section-heading',
+  '.home-feature-card','.home-programme-card','.panel','.panel-heading',
+  '.class-list button','.resource-shortcut','.admission-mini',
+  '.home-pyp-panel','.home-pyp-row','.bottom-callout','.spoken-bottom-callout',
+  '.filter-panel','.section-title-row','.content-card','.chapter-box',
+  '.quiz-card','.quiz-workspace','.quiz-result','.quiz-explanation',
+  '.paper-archive-summary','.paper-group','.paper-doc',
+  '.spoken-intro','.spoken-test-card','.spoken-vocab-card',
+  '.spoken-workspace','.vocab-workspace','.vocab-word',
+  '.spoken-result','.spoken-review-row',
+  '.about-layout','.about-facts span','.update-item',
+  '.contact-info','.contact-row','.enquiry-form',
+  '.owner-warning','.owner-stats>*','.owner-card',
+  '.owner-upload-list>*','.guest-quota-strip',
+  '.site-footer .footer-main>div','.site-footer .footer-bottom',
+  '.hero-caption','.hero-actions .btn','.card-actions>*',
+  '.paper-actions>*','.quiz-card button','.answer-option',
+  '.quiz-controls button','.spoken-option','.spoken-quiz-actions>*',
+  '.vocab-header .btn','.owner-upload-list .btn',
+  '.access-modal-backdrop .access-modal'
+ ].join(',');
+ let order=0;
+ const observer=new IntersectionObserver(entries=>{
+  entries.forEach(entry=>{
+   if(!entry.isIntersecting)return;
+   const el=entry.target;
+   el.classList.add('bt-in-view');
+   el.classList.remove('bt-reveal-pending');
+   observer.unobserve(el);
+  });
+ },{root:null,rootMargin:'0px 0px -6% 0px',threshold:0.06});
+ const register=el=>{
+  if(!(el instanceof Element)||el.classList.contains('bt-reveal-ready'))return;
+  el.classList.add('bt-reveal-ready','bt-reveal-pending');
+  el.style.setProperty('--bt-reveal-delay',(Math.min(order%5,4)*55)+'ms');
+  order++;
+  observer.observe(el);
+ };
+ const scan=root=>{
+  if(!root)return;
+  if(root instanceof Element&&root.matches(selector))register(root);
+  if(root.querySelectorAll)root.querySelectorAll(selector).forEach(register);
+ };
+ scan(document.body);
+ const mutations=new MutationObserver(records=>{
+  records.forEach(record=>record.addedNodes.forEach(node=>{
+   if(node instanceof Element)scan(node);
+  }));
+ });
+ mutations.observe(document.body,{childList:true,subtree:true});
+}
+
 function init(){
+ btSetupRevealAnimations();
  $('#yearNow').textContent=new Date().getFullYear();applySiteContent();
  CLASS9_CHAPTERS.forEach((ch,i)=>$('#chapterChips').insertAdjacentHTML('beforeend',`<span>${i+1}. ${escapeHtml(ch)}</span>`));
  renderUpdates();renderStudy();renderPapers();renderHomePapers();renderQuizCards();renderGuestQuota();
