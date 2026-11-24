@@ -5,62 +5,62 @@
       "subject": "Science",
       "board": "NCERT",
       "title": "Science - Textbook for Class IX (uploaded edition)",
-      "file": "assets/books/class9-science-ncert-uploaded-edition.pdf",
+      "file": "class9-science-ncert-uploaded-edition.pdf",
       "pages": 219
     }
   ],
   "paper_files": [
     {
       "source": "/mnt/data/10th Science 2022 Question Paper-min.pdf",
-      "file": "assets/papers/mpboard-class10-science-2022-main-paper.pdf"
+      "file": "mpboard-class10-science-2022-main-paper.pdf"
     },
     {
       "source": "/mnt/data/10th Science 2023 Question Paper Set A-min.pdf",
-      "file": "assets/papers/mpboard-class10-science-2023-set-a-paper.pdf"
+      "file": "mpboard-class10-science-2023-set-a-paper.pdf"
     },
     {
       "source": "/mnt/data/10th Science 2023 Complete Solution set A.pdf",
-      "file": "assets/papers/mpboard-class10-science-2023-set-a-solution.pdf"
+      "file": "mpboard-class10-science-2023-set-a-solution.pdf"
     },
     {
       "source": "/mnt/data/10th Science 2024 Question Paper Set A-min.pdf",
-      "file": "assets/papers/mpboard-class10-science-2024-set-a-paper.pdf"
+      "file": "mpboard-class10-science-2024-set-a-paper.pdf"
     },
     {
       "source": "/mnt/data/10th Science 2024 Complete Solution Set A.pdf",
-      "file": "assets/papers/mpboard-class10-science-2024-set-a-solution.pdf"
+      "file": "mpboard-class10-science-2024-set-a-solution.pdf"
     },
     {
       "source": "/mnt/data/10th Science 2025 Question Paper Set A.pdf",
-      "file": "assets/papers/mpboard-class10-science-2025-main-set-a-paper.pdf"
+      "file": "mpboard-class10-science-2025-main-set-a-paper.pdf"
     },
     {
       "source": "/mnt/data/10th Science 2025 Complete Solution.pdf",
-      "file": "assets/papers/mpboard-class10-science-2025-main-set-a-solution.pdf"
+      "file": "mpboard-class10-science-2025-main-set-a-solution.pdf"
     },
     {
       "source": "/mnt/data/10th Science 2025 iind.pdf",
-      "file": "assets/papers/mpboard-class10-science-2025-second-exam-set-d-paper.pdf"
+      "file": "mpboard-class10-science-2025-second-exam-set-d-paper.pdf"
     },
     {
       "source": "/mnt/data/MP Board Science 2025 iind- Solution.pdf",
-      "file": "assets/papers/mpboard-class10-science-2025-second-exam-solution.pdf"
+      "file": "mpboard-class10-science-2025-second-exam-solution.pdf"
     },
     {
       "source": "/mnt/data/PHYSICS_55-7-1.pdf",
-      "file": "assets/papers/cbse-class12-physics-qp-code-55-7-1.pdf"
+      "file": "cbse-class12-physics-qp-code-55-7-1.pdf"
     },
     {
       "source": "/mnt/data/PHYSICS_55-7-2.pdf",
-      "file": "assets/papers/cbse-class12-physics-qp-code-55-7-2.pdf"
+      "file": "cbse-class12-physics-qp-code-55-7-2.pdf"
     },
     {
       "source": "/mnt/data/PHYSICS_55-7-3.pdf",
-      "file": "assets/papers/cbse-class12-physics-qp-code-55-7-3.pdf"
+      "file": "cbse-class12-physics-qp-code-55-7-3.pdf"
     },
     {
       "source": "/mnt/data/PHYSICS_55(B)-7_Physics.pdf",
-      "file": "assets/papers/cbse-class12-physics-qp-code-55b-7-visually-impaired.pdf"
+      "file": "cbse-class12-physics-qp-code-55b-7-visually-impaired.pdf"
     }
   ],
   "quizzes": [
