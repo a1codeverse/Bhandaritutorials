@@ -1,0 +1,131 @@
+{
+  "books": [
+    {
+      "class": "Class 9",
+      "subject": "Science",
+      "board": "NCERT",
+      "title": "Science - Textbook for Class IX (uploaded edition)",
+      "file": "assets/books/class9-science-ncert-uploaded-edition.pdf",
+      "pages": 219
+    }
+  ],
+  "paper_files": [
+    {
+      "source": "/mnt/data/10th Science 2022 Question Paper-min.pdf",
+      "file": "assets/papers/mpboard-class10-science-2022-main-paper.pdf"
+    },
+    {
+      "source": "/mnt/data/10th Science 2023 Question Paper Set A-min.pdf",
+      "file": "assets/papers/mpboard-class10-science-2023-set-a-paper.pdf"
+    },
+    {
+      "source": "/mnt/data/10th Science 2023 Complete Solution set A.pdf",
+      "file": "assets/papers/mpboard-class10-science-2023-set-a-solution.pdf"
+    },
+    {
+      "source": "/mnt/data/10th Science 2024 Question Paper Set A-min.pdf",
+      "file": "assets/papers/mpboard-class10-science-2024-set-a-paper.pdf"
+    },
+    {
+      "source": "/mnt/data/10th Science 2024 Complete Solution Set A.pdf",
+      "file": "assets/papers/mpboard-class10-science-2024-set-a-solution.pdf"
+    },
+    {
+      "source": "/mnt/data/10th Science 2025 Question Paper Set A.pdf",
+      "file": "assets/papers/mpboard-class10-science-2025-main-set-a-paper.pdf"
+    },
+    {
+      "source": "/mnt/data/10th Science 2025 Complete Solution.pdf",
+      "file": "assets/papers/mpboard-class10-science-2025-main-set-a-solution.pdf"
+    },
+    {
+      "source": "/mnt/data/10th Science 2025 iind.pdf",
+      "file": "assets/papers/mpboard-class10-science-2025-second-exam-set-d-paper.pdf"
+    },
+    {
+      "source": "/mnt/data/MP Board Science 2025 iind- Solution.pdf",
+      "file": "assets/papers/mpboard-class10-science-2025-second-exam-solution.pdf"
+    },
+    {
+      "source": "/mnt/data/PHYSICS_55-7-1.pdf",
+      "file": "assets/papers/cbse-class12-physics-qp-code-55-7-1.pdf"
+    },
+    {
+      "source": "/mnt/data/PHYSICS_55-7-2.pdf",
+      "file": "assets/papers/cbse-class12-physics-qp-code-55-7-2.pdf"
+    },
+    {
+      "source": "/mnt/data/PHYSICS_55-7-3.pdf",
+      "file": "assets/papers/cbse-class12-physics-qp-code-55-7-3.pdf"
+    },
+    {
+      "source": "/mnt/data/PHYSICS_55(B)-7_Physics.pdf",
+      "file": "assets/papers/cbse-class12-physics-qp-code-55b-7-visually-impaired.pdf"
+    }
+  ],
+  "quizzes": [
+    {
+      "id": "mp10science2023",
+      "board": "MP Board",
+      "class": "Class 10",
+      "subject": "Science",
+      "questions": 10,
+      "source": "MP Board High School Examination Main 2023, Set A question paper and supplied detailed solution"
+    },
+    {
+      "id": "mp10science2024",
+      "board": "MP Board",
+      "class": "Class 10",
+      "subject": "Science",
+      "questions": 10,
+      "source": "MP Board High School Examination Main 2024, Set A question paper and supplied detailed solution"
+    },
+    {
+      "id": "mp10science2025main",
+      "board": "MP Board",
+      "class": "Class 10",
+      "subject": "Science",
+      "questions": 10,
+      "source": "MP Board High School Examination Main 2025, Set A question paper and supplied detailed solution"
+    },
+    {
+      "id": "mp10science2025second",
+      "board": "MP Board",
+      "class": "Class 10",
+      "subject": "Science",
+      "questions": 10,
+      "source": "MP Board High School Second Examination 2025 question paper and supplied solution"
+    },
+    {
+      "id": "cbse12physics",
+      "board": "CBSE",
+      "class": "Class 12",
+      "subject": "Physics",
+      "questions": 10,
+      "source": "CBSE Physics question paper codes 55/7/1, 55/7/2 and 55/7/3; year not printed on supplied title pages"
+    }
+  ],
+  "spoken_english": {
+    "knowledge_check": {
+      "questions": 10,
+      "features": [
+        "one-question-at-a-time practice",
+        "instant score out of 10",
+        "score-specific feedback",
+        "answer explanations",
+        "WhatsApp enquiry for Spoken English classes"
+      ]
+    },
+    "daily_vocabulary": {
+      "unique_words": 200,
+      "words_per_round": 5,
+      "rounds": 40,
+      "fields": [
+        "English word",
+        "Hindi meaning",
+        "example sentence"
+      ],
+      "repeat_policy": "Words are shown in a shuffled order; the bank reshuffles after a complete cycle."
+    }
+  }
+}
