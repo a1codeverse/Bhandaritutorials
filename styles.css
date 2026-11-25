@@ -818,3 +818,32 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
   .topbar-whatsapp{justify-content:center}
 }
 
+
+/* Mobile phone number: inherit the button's compact type size and stay on one line */
+.phone-link{
+  display:inline-flex;
+  flex-wrap:nowrap;
+  align-items:center;
+}
+.phone-link>span:last-child{
+  font-size:inherit!important;
+  white-space:nowrap!important;
+  overflow-wrap:normal!important;
+  word-break:keep-all!important;
+  flex:0 0 auto;
+}
+@media(max-width:760px){
+  .phone-link{
+    flex-wrap:nowrap;
+    gap:5px;
+    overflow:hidden;
+  }
+  .phone-link>span:last-child{
+    font-size:inherit!important;
+    letter-spacing:-.2px;
+  }
+}
+@media(max-width:380px){
+  .phone-link{font-size:10px;padding-left:3px;padding-right:3px}
+  .phone-link>span:last-child{font-size:10px!important}
+}
