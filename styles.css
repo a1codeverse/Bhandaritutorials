@@ -847,3 +847,65 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
   .phone-link{font-size:10px;padding-left:3px;padding-right:3px}
   .phone-link>span:last-child{font-size:10px!important}
 }
+
+
+/* Final mobile phone-number fit: override generic topbar anchor padding */
+@media(max-width:760px){
+  .topbar-left a.phone-link{
+    box-sizing:border-box;
+    display:flex;
+    width:100%;
+    min-width:0;
+    max-width:100%;
+    min-height:46px;
+    flex:0 0 auto;
+    flex-wrap:nowrap;
+    justify-content:center;
+    align-items:center;
+    gap:5px;
+    padding:7px 4px!important;
+    white-space:nowrap!important;
+    overflow:visible;
+  }
+  .topbar-left a.phone-link>span:first-child{
+    display:inline-block;
+    flex:0 0 auto;
+    width:auto;
+    padding:0;
+    font-size:16px;
+    line-height:1;
+    white-space:nowrap;
+  }
+  .topbar-left a.phone-link>span:last-child{
+    display:inline-block;
+    flex:0 0 auto;
+    min-width:max-content;
+    width:auto;
+    max-width:none;
+    padding:0;
+    font-size:11px!important;
+    line-height:1;
+    letter-spacing:-.25px;
+    white-space:nowrap!important;
+    overflow-wrap:normal!important;
+    word-break:normal!important;
+  }
+}
+@media(max-width:380px){
+  .topbar-left a.phone-link{
+    grid-column:1/-1;
+    min-height:44px;
+    font-size:10px;
+    gap:6px;
+  }
+  .topbar-left a.phone-link>span:last-child{
+    font-size:11px!important;
+    letter-spacing:0;
+  }
+  .topbar-right{
+    grid-column:1/-1;
+  }
+  .topbar-right a.topbar-whatsapp{
+    width:100%;
+  }
+}
